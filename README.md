@@ -75,9 +75,9 @@ This app allows users to **create**, **edit**, **delete**,**show**, and view tas
 
 ## 🖼️ Screenshots 
 
-| Task List | Add/Edit Task |
-|:--:|:--:|
-| <img src="https://github.com/user-attachments/assets/8e1b8e54-4a93-4fa4-93fa-5aa5e3985505" width="250"/> | <img src="https://github.com/user-attachments/assets/fa8b2c44-5a35-4726-8e44-3e187538a157" width="250"/> |
+| Task List | Add/Edit Task | Show Task |
+|:--:|:--:|:--:|
+| <img src="https://github.com/ar-sarkar-77/Task-Manager-App/raw/main/screenshots/main_screen.png" width="250"/> | <img src="https://github.com/ar-sarkar-77/Task-Manager-App/raw/main/screenshots/add_task.png" width="250"/> | <img src="https://github.com/ar-sarkar-77/Task-Manager-App/raw/main/screenshots/show_task.png" width="250"/> |
 
 
 ---
