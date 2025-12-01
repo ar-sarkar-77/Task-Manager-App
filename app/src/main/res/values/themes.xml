@@ -1,9 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
+
     <style name="Base.Theme.TaskManager" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary_day</item>
+        <item name="colorOnPrimary">@color/on_primary_day</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/background_day</item>
+
+        <!-- Text -->
+        <item name="android:textColor">@color/text_primary_day</item>
+        <item name="android:textColorSecondary">@color/text_secondary_day</item>
+
     </style>
 
     <style name="Theme.TaskManager" parent="Base.Theme.TaskManager" />
+
 </resources>

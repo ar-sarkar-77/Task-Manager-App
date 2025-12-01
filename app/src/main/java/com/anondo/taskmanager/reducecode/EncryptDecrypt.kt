@@ -17,7 +17,6 @@ object EncryptDecrypt {
 
     fun encryptData(plainText : String) : String{
 
-
         var plainTextByte = plainText.toByteArray(Charsets.UTF_8)
 
         var password = "7fQ@Lp2!vC9#rXen"

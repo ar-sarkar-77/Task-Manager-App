@@ -23,7 +23,9 @@
                 android:id="@+id/etTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Task Title"/>
+                android:hint="Task Title"
+                style="?attr/textAppearanceBodyLarge"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -42,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Description"
                 android:inputType="textMultiLine"
+                style="?attr/textAppearanceBodyLarge"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,7 +58,9 @@
             android:padding="6dp"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="16dp"
-            android:background="@drawable/status_pending"/>
+            android:background="@drawable/status_pending"
+            style="?attr/textAppearanceBodyLarge"
+            />
 
         <DatePicker
             android:id="@+id/datePicker"
@@ -67,6 +72,7 @@
             android:visibility="gone"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            style="?attr/textAppearanceBodyLarge"
             />
 
         <Switch
@@ -76,7 +82,8 @@
             android:text="Mark as Completed?"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            style="?attr/textAppearanceBodyLarge"/>
 
         <Button
             android:id="@+id/btnSaveTask"
@@ -87,7 +94,9 @@
             android:backgroundTint="#00CCFF"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            style="?attr/textAppearanceBodyLarge"
+            />
 
     </LinearLayout>
 

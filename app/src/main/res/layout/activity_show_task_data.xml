@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
-    android:fitsSystemWindows="true"
-    >
+    android:background="?attr/colorBackgroundFloating"
+    android:fitsSystemWindows="true">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,24 +14,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#fff"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            >
+            android:layout_marginTop="16dp">
 
+            <!-- Header -->
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:textStyle="bold"
                 android:text="Task Details"
                 android:padding="16dp"
                 android:gravity="center"
+                android:textStyle="bold"
                 app:lineHeight="28sp"
-            />
+                style="?attr/textAppearanceHeadlineSmall" />
 
-
+            <!-- Title Card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,66 +42,64 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Task Title"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
                     android:maxLines="3"
                     android:ellipsize="end"
                     android:lineSpacingExtra="3dp"
                     android:paddingLeft="8dp"
                     android:padding="16dp"
-                    />
+                    android:textStyle="bold"
+                    style="?attr/textAppearanceTitleLarge"/>
 
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- Description -->
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvShowDescription"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
                 android:paddingBottom="12dp"
                 android:text="Full description"
-                android:textSize="16sp"
                 android:background="@drawable/bg_task_rounded"
                 android:padding="16dp"
-                />
+                android:textStyle="bold"
+                style="?attr/textAppearanceBodyLarge"/>
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:gravity="center"
-               android:weightSum="1"
-               android:layout_marginTop="16dp"
-               >
+            <!-- Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1"
+                android:layout_marginTop="16dp">
 
-               <com.google.android.material.textview.MaterialTextView
-                   android:id="@+id/tvShowDueDate"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:paddingBottom="12dp"
-                   android:text="Due Date: 01/01/2026"
-                   android:textSize="16sp"
-                   android:gravity="center_vertical"
-                   android:layout_weight="1"
-                   android:textStyle="bold"
-                   android:background="#fff"
-                   />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowDueDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:text="Due Date: 01/01/2026"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    style="?attr/textAppearanceTitleSmall"/>
 
-               <com.google.android.material.textview.MaterialTextView
-                   android:id="@+id/tvShowStatus"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="@drawable/status_pending"
-                   android:padding="6dp"
-                   android:text="Pending"
-                   android:textSize="14sp" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvShowStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/status_pending"
+                    android:padding="6dp"
+                    android:text="Pending"
+                    android:textColor="#000"
+                    style="?attr/textAppearanceLabelMedium"/>
 
-
-           </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
+    <!-- Close Button -->
     <Button
         android:id="@+id/outlinedButton"
         android:layout_width="wrap_content"
@@ -112,11 +107,10 @@
         android:text="Close"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_marginBottom="24dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        />
+        android:layout_marginRight="16dp"/>
 
 </RelativeLayout>
