@@ -34,10 +34,7 @@
                 android:layout_height="40dp"
                 android:padding="8dp"
                 android:contentDescription="Edit Task"
-                android:src="@drawable/edit_svgrepo_com"
-                app:strokeColor="@android:color/darker_gray"
-                app:strokeWidth="1dp"
-                app:tint="?attr/colorOnSurface"
+                android:src="@drawable/edit_blue"
                 />
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -46,10 +43,8 @@
                 android:layout_height="40dp"
                 android:padding="8dp"
                 android:contentDescription="Delete Task"
-                android:src="@drawable/delete_2_svgrepo_com"
-                app:strokeColor="@android:color/darker_gray"
-                app:strokeWidth="1dp"
-                app:tint="?attr/colorOnSurface"
+                android:src="@drawable/delete_blue"
+
 
                 />
         </LinearLayout>
@@ -72,6 +67,7 @@
         <TextView
             android:id="@+id/tvDescription"
             style="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnBackground"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Short description of the task goes here and can wrap into multiple lines."
@@ -88,13 +84,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="8dp"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvDescription">
 
             <CheckBox
                 android:id="@+id/cbCompleted"
                 style="?attr/textAppearanceBodySmall"
+                android:textColor="?attr/colorOnBackground"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Completed"
@@ -104,6 +101,7 @@
             <TextView
                 android:id="@+id/tvDueDate"
                 style="?attr/textAppearanceLabelSmall"
+                android:textColor="?attr/colorOnBackground"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Due: Jan 01, 2026"
