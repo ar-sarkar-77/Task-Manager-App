@@ -13,5 +13,6 @@ data class Task_Data_Class(
    var title : String ,
    var description : String ,
    var duedate : String ,
-   var status : Boolean
+   var status : Boolean,
+   var color: Int
 ) : Parcelable

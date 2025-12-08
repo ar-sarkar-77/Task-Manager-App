@@ -95,27 +95,16 @@ class TaskAdapter(var handleUser : handleUserClick, var context: Context, var ta
 
                 this.tvDueDate.text = formattedDate
 
-                var todaysDate = EncryptDecrypt.currentTime()
-
                 if (status == true){
-
                     this.cbCompleted.isChecked = true
                     this.tvStatus.text = "Completed"
                     this.tvStatus.setBackgroundResource(R.drawable.status_completed)
 
                 }
                 else{
-                    if (formattedDate>=todaysDate){
                         this.cbCompleted.isChecked = false
                         this.tvStatus.text = "Pending"
                         this.tvStatus.setBackgroundResource(R.drawable.status_pending)
-                    }
-                    else{
-                        this.cbCompleted.isChecked = false
-                        this.tvStatus.text = "Expired"
-                        this.tvStatus.setBackgroundResource(R.drawable.status_expired)
-                    }
-
                 }
 
                 this.cbCompleted.setOnClickListener {

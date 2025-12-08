@@ -63,7 +63,7 @@ object EncryptDecrypt {
 
         return dao
     }
-
+/*
     @RequiresApi(Build.VERSION_CODES.O)
     fun currentTime(): String {
         val currentDate =LocalDate.now()
@@ -71,6 +71,7 @@ object EncryptDecrypt {
 
         return formattedDate
     }
+ */
 
 
 }

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:colorBackground"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="?attr/android:textColor"/>
+
+        <!-- Effective Date Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Effective Date: December 07, 2025"
+            android:textSize="20sp"
+            android:paddingBottom="12dp"
+            android:textColor="?attr/android:textColorSecondary"/>
+
+        <!-- Introduction / No Data Collection Info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This Privacy Policy applies to the app created by Md. Anondo Sarkar as a Free app. This service is provided by Md. Anondo Sarkar at no cost and is intended for use as is."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 1. Information Collection and Use -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="1. Information Collection and Use"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• The Application functions offline and does not collect, transmit, or store any personally identifiable information (PII).\n\n• User Data (Tasks/To-dos) is stored locally on your device and is not shared.\n\n• Permissions required are only for basic functionality and are not used to collect personal data."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 2. Third-Party Services -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="2. Third-Party Services"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Application does not use any third-party services that collect information. No analytics, advertising, or crash-reporting services are used."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 3. Log Data -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="3. Log Data"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Since no crash reporting tools are used, no log data or crash reports are collected from your device."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 4. Data Retention -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="4. Data Retention"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All data is stored locally. Uninstalling the app or clearing data will permanently delete tasks and lists. We cannot recover this data."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 5. Children’s Privacy -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="5. Children’s Privacy"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This app is not intended for children under 13. We do not knowingly collect information from children under 13."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 6. Changes to This Privacy Policy -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="6. Changes to This Privacy Policy"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We may update this Privacy Policy occasionally. Please review this page periodically for changes. Updates will be posted here."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 7. Contact Us -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            app:cardBackgroundColor="?attr/android:colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:text="7. Contact Us"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/android:textColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If you have any questions or suggestions about our Privacy Policy, contact us at: Zentask.todo25@gmail.com"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="?attr/android:textColorSecondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
