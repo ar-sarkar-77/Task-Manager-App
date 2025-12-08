@@ -13,9 +13,9 @@ import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.anondo.taskmanager.AboutAppFragment
-import com.anondo.taskmanager.HomeFragment
-import com.anondo.taskmanager.PrivacyPolicyFragment
+import com.anondo.taskmanager.views.AboutAppFragment
+import com.anondo.taskmanager.views.HomeFragment
+import com.anondo.taskmanager.views.PrivacyPolicyFragment
 import com.anondo.taskmanager.R
 import com.anondo.taskmanager.views.TaskAdapter
 import com.anondo.taskmanager.db.TaskDao

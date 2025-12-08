@@ -1,6 +1,7 @@
 package com.anondo.taskmanager.views
 
 import android.content.Intent
+import android.graphics.Color
 import android.icu.util.Calendar
 import android.os.Bundle
 import android.view.View
@@ -16,6 +17,27 @@ class Add_Task : AppCompatActivity() {
     lateinit var binding: ActivityAddTaskBinding
     lateinit var dao: TaskDao
     var userId = 0
+
+    val colors = listOf(
+        Color.parseColor("#EF9A9A"), // Soft Brick Red
+        Color.parseColor("#F48FB1"), // Muted Pink
+        Color.parseColor("#CE93D8"), // Muted Purple
+        Color.parseColor("#9FA8DA"), // Muted Indigo
+        Color.parseColor("#90CAF9"), // Sky Blue
+        Color.parseColor("#80CBC4"), // Muted Teal
+        Color.parseColor("#E6EE9C"), // Soft Olive
+        Color.parseColor("#FFCC80"), // Peach Orange
+        Color.parseColor("#BCAAA4"), // Muted Brown
+        Color.parseColor("#BA68C8"), // Rich Purple
+        Color.parseColor("#F06292"), // Rose
+        Color.parseColor("#7986CB"), // Dark Indigo
+        Color.parseColor("#4DD0E1"), // Cyan
+        Color.parseColor("#FFAB91"), // Salmon
+        Color.parseColor("#B39DDB")  // Lavender
+    )
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddTaskBinding.inflate(layoutInflater)
@@ -97,12 +119,16 @@ class Add_Task : AppCompatActivity() {
     fun addoredit(id: Int, title: String, description: String, dueTimes: String, status: Boolean) {
 
         if (binding.btnSaveTask.text=="Update Task"){
-            var taskData = Task_Data_Class(id, title, description, dueTimes, status)
+            val randomColor = colors.random()
+
+            var taskData = Task_Data_Class(id, title, description, dueTimes, status , randomColor.toInt())
 
             dao.Edit_Task(taskData)
 
         }else{
-            var taskData = Task_Data_Class(0, title, description, dueTimes, status)
+            val randomColor = colors.random()
+
+            var taskData = Task_Data_Class(0, title, description, dueTimes, status , randomColor.toInt())
 
             dao.Add_Task(taskData)
         }

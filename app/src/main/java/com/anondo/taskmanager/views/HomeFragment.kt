@@ -1,4 +1,4 @@
-package com.anondo.taskmanager
+package com.anondo.taskmanager.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,12 +12,11 @@ import androidx.annotation.MenuRes
 import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.anondo.taskmanager.R
 import com.anondo.taskmanager.databinding.FragmentHomeBinding
 import com.anondo.taskmanager.db.TaskDao
 import com.anondo.taskmanager.db.Task_Data_Class
 import com.anondo.taskmanager.reducecode.EncryptDecrypt
-import com.anondo.taskmanager.views.Add_Task
-import com.anondo.taskmanager.views.TaskAdapter
 
 class HomeFragment : Fragment(), TaskAdapter.handleUserClick {
 
@@ -42,6 +41,7 @@ class HomeFragment : Fragment(), TaskAdapter.handleUserClick {
 
         binding.addTask.setOnClickListener {
             startActivity(Intent(requireContext(), Add_Task::class.java))
+            requireActivity().finish()
         }
 
         binding.filter.setOnClickListener { view ->

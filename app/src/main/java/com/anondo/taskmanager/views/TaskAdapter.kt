@@ -17,39 +17,6 @@ import java.util.Locale
 
 class TaskAdapter(var handleUser : handleUserClick, var context: Context, var taskData : MutableList<Task_Data_Class>) : RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
 
-    /*private val colors = listOf(
-        Color.parseColor("#EDEDED"), // Soft Grey
-        Color.parseColor("#F0F0F0"), // Light Neutral
-        Color.parseColor("#EFEAE4"), // Warm Beige
-        Color.parseColor("#E8E6F3"), // Lilac Grey
-        Color.parseColor("#E6EEF3"), // Blue Grey
-        Color.parseColor("#EAF1EE"), // Mint Grey
-        Color.parseColor("#F3EFE8"), // Neutral Sand
-        Color.parseColor("#ECEFF1"), // Material Grey
-        Color.parseColor("#EEE8E5"), // Soft Peach Grey
-        Color.parseColor("#EBEBEB")  // Balanced Light Grey
-    )*/
-
-    private val colors = listOf(
-         Color.parseColor("#D32F2F"), // Red
-         Color.parseColor("#C2185B"), // Pink
-         Color.parseColor("#512DA8"), // Deep Purple
-         Color.parseColor("#303F9F"), // Indigo
-         Color.parseColor("#1976D2"), // Blue
-         Color.parseColor("#00796B"), // Teal
-         Color.parseColor("#388E3C"), // Green
-         Color.parseColor("#AFB42B"), // Olive
-         Color.parseColor("#F57C00"),  // Orange
-         Color.parseColor("#5D4037"), // Brown
-         Color.parseColor("#6A1B9A"), // Deep Purple
-         Color.parseColor("#AD1457"), // Rose
-         Color.parseColor("#283593"), // Dark Indigo
-         Color.parseColor("#006064"), // Dark Cyan
-         Color.parseColor("#E65100"), // Deep Orange
-         Color.parseColor("#4A148C"),  // Royal Purple
-     )
-
-
     interface handleUserClick{
         fun onEditClick(task: Task_Data_Class)
         fun onDeleteClick(task: Task_Data_Class)
@@ -76,14 +43,11 @@ class TaskAdapter(var handleUser : handleUserClick, var context: Context, var ta
 
             taskData[position].let {user->
 
-                val randomColor = colors.random()
-                cardTask.setCardBackgroundColor(randomColor)
-
-                cardTask.alpha = 1f
-
-
                 var title = EncryptDecrypt.decryptData(user.title)
                 var description = EncryptDecrypt.decryptData(user.description)
+                var backRoundColor = user.color
+
+                cardTask.setCardBackgroundColor(user.color)
 
                 this.tvTitle.text = title
                 this.tvDescription.text = description
@@ -120,7 +84,8 @@ class TaskAdapter(var handleUser : handleUserClick, var context: Context, var ta
                             this.title,
                             this.description,
                             this.duedate,
-                            isChecked
+                            isChecked,
+                            this.color
                         )
                         dao.Edit_Task(updatedTask)
                     }
