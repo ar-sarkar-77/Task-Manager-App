@@ -1,27 +1,16 @@
-package com.anondo.taskmanager.views
+package com.anondo.taskmanager.views.activity
 
-import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.view.View
 import android.widget.Toast
-import androidx.annotation.MenuRes
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.anondo.taskmanager.views.AboutAppFragment
-import com.anondo.taskmanager.views.HomeFragment
-import com.anondo.taskmanager.views.PrivacyPolicyFragment
 import com.anondo.taskmanager.R
-import com.anondo.taskmanager.views.TaskAdapter
-import com.anondo.taskmanager.db.TaskDao
-import com.anondo.taskmanager.db.Task_Data_Class
 import com.anondo.taskmanager.databinding.ActivityMainBinding
-import com.anondo.taskmanager.reducecode.EncryptDecrypt
+import com.anondo.taskmanager.views.fragment.AboutAppFragment
+import com.anondo.taskmanager.views.fragment.HomeFragment
+import com.anondo.taskmanager.views.fragment.PrivacyPolicyFragment
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -43,14 +32,20 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.add(R.id.frameLayout , HomeFragment())
         fragmentTransaction.commit()
 
-        val actionBarDrawerToggle = ActionBarDrawerToggle(this, binding.main , binding.materialToolbar , R.string.drawer_open , R.string.drawer_close)
+        val actionBarDrawerToggle = ActionBarDrawerToggle(
+            this,
+            binding.main,
+            binding.materialToolbar,
+            R.string.drawer_open,
+            R.string.drawer_close
+        )
         binding.main.addDrawerListener(actionBarDrawerToggle)
 
         actionBarDrawerToggle.syncState()
 
         binding.navView.setNavigationItemSelectedListener {itemMenu ->
 
-            if (itemMenu.itemId==R.id.home){
+            if (itemMenu.itemId== R.id.home){
 
                 binding.frameLayout.removeAllViews()
                 val fragmentManager : FragmentManager = supportFragmentManager
@@ -62,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext , "Home" , Toast.LENGTH_SHORT).show()
                 binding.main.closeDrawers()
 
-            }else if (itemMenu.itemId==R.id.privacyPolicy){
+            }else if (itemMenu.itemId== R.id.privacyPolicy){
 
                 binding.frameLayout.removeAllViews()
                 val fragmentManager : FragmentManager = supportFragmentManager
@@ -73,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext , "Privacy Policy" , Toast.LENGTH_SHORT).show()
                 binding.main.closeDrawers()
 
-            }else if (itemMenu.itemId==R.id.aboutApp){
+            }else if (itemMenu.itemId== R.id.aboutApp){
 
                 binding.frameLayout.removeAllViews()
                 val fragmentManager : FragmentManager = supportFragmentManager

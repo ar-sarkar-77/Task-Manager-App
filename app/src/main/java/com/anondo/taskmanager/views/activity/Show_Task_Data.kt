@@ -1,4 +1,4 @@
-package com.anondo.taskmanager.views
+package com.anondo.taskmanager.views.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

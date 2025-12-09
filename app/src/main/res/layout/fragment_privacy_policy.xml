@@ -49,7 +49,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="This Privacy Policy applies to the app created by Md. Anondo Sarkar as a Free app. This service is provided by Md. Anondo Sarkar at no cost and is intended for use as is."
+                    android:text="This Privacy Policy applies to the app created by Salsabil Enterprise as a Free app. This service is provided by Salsabil Enterprise at no cost and is intended for use as is."
                     android:textSize="16sp"
                     android:lineSpacingExtra="2dp"
                     android:textColor="?attr/android:textColorSecondary"/>

@@ -1,8 +1,7 @@
-package com.anondo.taskmanager.views
+package com.anondo.taskmanager.views.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.icu.text.SimpleDateFormat
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,6 +11,7 @@ import com.anondo.taskmanager.R
 import com.anondo.taskmanager.databinding.TaskItemBinding
 import com.anondo.taskmanager.db.Task_Data_Class
 import com.anondo.taskmanager.reducecode.EncryptDecrypt
+import com.anondo.taskmanager.views.activity.Show_Task_Data
 import java.util.Date
 import java.util.Locale
 
@@ -20,7 +20,7 @@ class TaskAdapter(var handleUser : handleUserClick, var context: Context, var ta
     interface handleUserClick{
         fun onEditClick(task: Task_Data_Class)
         fun onDeleteClick(task: Task_Data_Class)
-        fun onStatusChange(task: Task_Data_Class , isCheck : Boolean)
+        fun onStatusChange(task: Task_Data_Class, isCheck : Boolean)
     }
 
     class ViewHolder(var binding: TaskItemBinding) : RecyclerView.ViewHolder(binding.root)

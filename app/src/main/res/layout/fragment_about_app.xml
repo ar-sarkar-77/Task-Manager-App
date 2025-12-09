@@ -64,7 +64,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ZenTask To-do Manager is a smart, offline task management application designed to help you organize your daily tasks, notes, and to-dos efficiently. With a simple interface and powerful AI-assisted tools, this app ensures that you can stay productive and never miss a deadline.\n\nUnlike other task apps, AI Task Manager stores all your data locally on your device, giving you full privacy and control over your tasks. No personal information is collected, transmitted, or shared with third parties."
+                    android:text="ZenTask To-do Manager is a smart, offline task management application designed to help you organize your daily tasks, notes, and to-dos efficiently. With a simple interface and powerful notes tools, this app ensures that you can stay productive and never miss a deadline.\n\nUnlike other task apps, ZenTask To-do Task Manager stores all your data locally on your device, giving you full privacy and control over your tasks. No personal information is collected, transmitted, or shared with third parties."
                     android:textSize="16sp"
                     android:lineSpacingExtra="2dp"
                     android:paddingBottom="8dp"

@@ -13,8 +13,12 @@
         <item name="android:textColor">@color/text_primary_day</item>
         <item name="android:textColorSecondary">@color/text_secondary_day</item>
 
+        <!-- ✅ STATUS BAR for Day -->
+        <item name="android:statusBarColor">@color/background_days</item>
+        <item name="android:windowLightStatusBar">false</item>
+
     </style>
 
-    <style name="Theme.TaskManager" parent="Base.Theme.TaskManager" />
+    <style name="Theme.TaskManager" parent="Base.Theme.TaskManager"/>
 
 </resources>

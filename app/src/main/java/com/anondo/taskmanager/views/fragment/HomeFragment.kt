@@ -1,4 +1,4 @@
-package com.anondo.taskmanager.views
+package com.anondo.taskmanager.views.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,6 +17,8 @@ import com.anondo.taskmanager.databinding.FragmentHomeBinding
 import com.anondo.taskmanager.db.TaskDao
 import com.anondo.taskmanager.db.Task_Data_Class
 import com.anondo.taskmanager.reducecode.EncryptDecrypt
+import com.anondo.taskmanager.views.activity.Add_Task
+import com.anondo.taskmanager.views.adapter.TaskAdapter
 
 class HomeFragment : Fragment(), TaskAdapter.handleUserClick {
 

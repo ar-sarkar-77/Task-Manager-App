@@ -1,4 +1,4 @@
-package com.anondo.taskmanager.views
+package com.anondo.taskmanager.views.activity
 
 import android.content.Intent
 import android.graphics.Color
@@ -6,11 +6,11 @@ import android.icu.util.Calendar
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.anondo.taskmanager.views.MainActivity
+import com.anondo.taskmanager.databinding.ActivityAddTaskBinding
 import com.anondo.taskmanager.db.TaskDao
 import com.anondo.taskmanager.db.Task_Data_Class
-import com.anondo.taskmanager.databinding.ActivityAddTaskBinding
 import com.anondo.taskmanager.reducecode.EncryptDecrypt
+import com.anondo.taskmanager.views.activity.MainActivity
 
 @Suppress("DEPRECATION")
 class Add_Task : AppCompatActivity() {
@@ -19,21 +19,11 @@ class Add_Task : AppCompatActivity() {
     var userId = 0
 
     val colors = listOf(
-        Color.parseColor("#EF9A9A"), // Soft Brick Red
         Color.parseColor("#F48FB1"), // Muted Pink
         Color.parseColor("#CE93D8"), // Muted Purple
-        Color.parseColor("#9FA8DA"), // Muted Indigo
-        Color.parseColor("#90CAF9"), // Sky Blue
-        Color.parseColor("#80CBC4"), // Muted Teal
-        Color.parseColor("#E6EE9C"), // Soft Olive
-        Color.parseColor("#FFCC80"), // Peach Orange
-        Color.parseColor("#BCAAA4"), // Muted Brown
         Color.parseColor("#BA68C8"), // Rich Purple
         Color.parseColor("#F06292"), // Rose
-        Color.parseColor("#7986CB"), // Dark Indigo
-        Color.parseColor("#4DD0E1"), // Cyan
-        Color.parseColor("#FFAB91"), // Salmon
-        Color.parseColor("#B39DDB")  // Lavender
+        Color.parseColor("#7986CB") // Dark Indigo
     )
 
 
@@ -121,14 +111,16 @@ class Add_Task : AppCompatActivity() {
         if (binding.btnSaveTask.text=="Update Task"){
             val randomColor = colors.random()
 
-            var taskData = Task_Data_Class(id, title, description, dueTimes, status , randomColor.toInt())
+            var taskData =
+                Task_Data_Class(id, title, description, dueTimes, status, randomColor.toInt())
 
             dao.Edit_Task(taskData)
 
         }else{
             val randomColor = colors.random()
 
-            var taskData = Task_Data_Class(0, title, description, dueTimes, status , randomColor.toInt())
+            var taskData =
+                Task_Data_Class(0, title, description, dueTimes, status, randomColor.toInt())
 
             dao.Add_Task(taskData)
         }

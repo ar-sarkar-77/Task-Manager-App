@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskManager">
         <activity
-            android:name=".views.Show_Task_Data"
+            android:name=".views.activity.Show_Task_Data"
             android:exported="false" />
         <activity
-            android:name=".views.Add_Task"
+            android:name=".views.activity.Add_Task"
             android:exported="false" />
         <activity
-            android:name=".views.MainActivity"
+            android:name=".views.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
