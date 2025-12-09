@@ -45,7 +45,6 @@ class TaskAdapter(var handleUser : handleUserClick, var context: Context, var ta
 
                 var title = EncryptDecrypt.decryptData(user.title)
                 var description = EncryptDecrypt.decryptData(user.description)
-                var backRoundColor = user.color
 
                 cardTask.setCardBackgroundColor(user.color)
 

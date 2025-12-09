@@ -19,7 +19,6 @@
         android:padding="8dp"
         >
 
-        <!-- Action buttons -->
         <LinearLayout
             android:id="@+id/layoutActions"
             android:layout_width="wrap_content"
@@ -50,7 +49,6 @@
                 />
         </LinearLayout>
 
-        <!-- Title -->
         <TextView
             android:id="@+id/tvTitle"
             style="?attr/textAppearanceTitleMedium"
@@ -64,7 +62,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@id/layoutActions"/>
 
-        <!-- Description -->
         <TextView
             android:id="@+id/tvDescription"
             style="?attr/textAppearanceBodySmall"
@@ -79,7 +76,6 @@
             app:layout_constraintTop_toBottomOf="@id/tvTitle"
             app:layout_constraintEnd_toStartOf="@id/layoutActions"/>
 
-        <!-- Due date + Completed -->
         <LinearLayout
             android:id="@+id/layoutBottom"
             android:layout_width="wrap_content"
@@ -111,7 +107,6 @@
 
         </LinearLayout>
 
-        <!-- Status badge -->
         <TextView
             android:id="@+id/tvStatus"
             style="?attr/textAppearanceLabelSmall"

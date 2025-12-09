@@ -2,18 +2,18 @@
 
     <style name="Base.Theme.TaskManager" parent="Theme.Material3.DayNight.NoActionBar">
 
-        <!-- Primary colors -->
+
         <item name="colorPrimary">@color/primary_day</item>
         <item name="colorOnPrimary">@color/on_primary_day</item>
 
-        <!-- Background -->
+
         <item name="android:colorBackground">@color/background_day</item>
 
-        <!-- Text -->
+
         <item name="android:textColor">@color/text_primary_day</item>
         <item name="android:textColorSecondary">@color/text_secondary_day</item>
 
-        <!-- ✅ STATUS BAR for Day -->
+
         <item name="android:statusBarColor">@color/background_days</item>
         <item name="android:windowLightStatusBar">false</item>
 

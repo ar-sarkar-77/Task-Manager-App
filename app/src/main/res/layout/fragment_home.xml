@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Search & Filter bar -->
     <LinearLayout
         android:id="@+id/linearLay"
         android:layout_width="match_parent"
@@ -40,7 +39,6 @@
     </LinearLayout>
 
 
-    <!-- Task List -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -51,7 +49,6 @@
         />
 
 
-    <!-- Floating Add button -->
     <ImageView
         android:id="@+id/add_task"
         android:layout_width="48dp"
