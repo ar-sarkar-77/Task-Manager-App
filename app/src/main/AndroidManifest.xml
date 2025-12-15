@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskManager">
         <activity
-            android:name=".views.activity.Show_Task_Data"
+            android:name="com.anondo.taskmanager.views.activity.Show_Task_Data"
             android:exported="false" />
         <activity
-            android:name=".views.activity.Add_Task"
+            android:name="com.anondo.taskmanager.views.activity.Add_Task"
             android:exported="false" />
         <activity
-            android:name=".views.activity.MainActivity"
+            android:name="com.anondo.taskmanager.views.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

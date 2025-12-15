@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.anondo.taskmanager"
+    namespace = "com.salsabil.zentasktodo"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.anondo.taskmanager"
+        applicationId = "com.salsabil.zentasktodo"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

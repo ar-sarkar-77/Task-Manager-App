@@ -6,8 +6,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.anondo.taskmanager.R
-import com.anondo.taskmanager.databinding.ActivityMainBinding
+import com.salsabil.zentasktodo.R
+import com.salsabil.zentasktodo.databinding.ActivityMainBinding
 import com.anondo.taskmanager.views.fragment.AboutAppFragment
 import com.anondo.taskmanager.views.fragment.HomeFragment
 import com.anondo.taskmanager.views.fragment.PrivacyPolicyFragment

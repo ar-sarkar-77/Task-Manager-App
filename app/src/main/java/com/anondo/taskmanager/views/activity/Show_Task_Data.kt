@@ -2,8 +2,8 @@ package com.anondo.taskmanager.views.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.anondo.taskmanager.R
-import com.anondo.taskmanager.databinding.ActivityShowTaskDataBinding
+import com.salsabil.zentasktodo.R
+import com.salsabil.zentasktodo.databinding.ActivityShowTaskDataBinding
 
 class Show_Task_Data : AppCompatActivity() {
     lateinit var binding: ActivityShowTaskDataBinding

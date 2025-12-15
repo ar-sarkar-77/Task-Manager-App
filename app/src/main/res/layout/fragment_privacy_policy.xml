@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Effective Date: December 07, 2025"
+            android:text="Effective Date: December 10, 2025"
             android:textSize="20sp"
             android:paddingBottom="12dp"
             android:textColor="?attr/android:textColorSecondary"/>
